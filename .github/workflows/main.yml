@@ -29,3 +29,9 @@ jobs:
       # You may pin to the exact commit or the version.
       # uses: cypress-io/github-action@30008f1458a5a2c97054bfe118fe33d75976c482
       - uses: cypress-io/github-action@v4.2.0
+      
+      - name: npm install, build and test
+        run: |
+          npm install
+          npm run test
+
